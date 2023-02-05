@@ -22,6 +22,10 @@ const Student = sequelize.define("students",{
     type:DataTypes.STRING(200),
     allowNull:false,
     unique:true
+  },
+  registered:{
+    type:DataTypes.BOOLEAN,
+    defaultValue:false
   }
 },{timestamps: false})
 
