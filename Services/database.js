@@ -3,11 +3,12 @@ const mysql = require('mysql2')
 
 const sequelize = new Sequelize(
   process.env.DATABASE,
-  process.env.USER,
+  'root',
   process.env.PASSWORD,
   {
     host:process.env.HOST,
-    dialect:'mysql'
+    dialect:'mysql',
+    logginf:false
   }
 )
 

@@ -11,6 +11,10 @@ const Student = sequelize.define("students",{
     type:DataTypes.STRING(300),
     allowNull:false
   },
+  password:{
+    type:DataTypes.STRING,
+    allowNull:false
+  },
   department:{
     type:DataTypes.STRING(100),
     allowNull:false
@@ -26,6 +30,9 @@ const Student = sequelize.define("students",{
   registered:{
     type:DataTypes.BOOLEAN,
     defaultValue:false
+  },
+  token:{
+    type:DataTypes.STRING
   }
 },{timestamps: false})
 

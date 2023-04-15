@@ -21,10 +21,6 @@ const Class = sequelize.define("class",{
   credits:{
     type:DataTypes.INTEGER
   },
-  totalSeats:{
-    type:DataTypes.INTEGER,
-    defaultValue:0
-  }
 },{timestamps:false})
 
 module.exports = Class

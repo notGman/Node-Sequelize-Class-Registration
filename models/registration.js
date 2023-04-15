@@ -26,8 +26,8 @@ const Registration = sequelize.define("registration",{
   }
 },{timestamps:false})
 
-Registration.belongsTo(Student,{foreignKey:"regNum"})
-Registration.belongsTo(Class,{foreignKey:"classCode"})
+Registration.belongsTo(Student,{foreignKey:"regNum",onDelete:'CASCADE'})
+Registration.belongsTo(Class,{foreignKey:"classCode",onDelete:'CASCADE'})
 
 
 module.exports = Registration
